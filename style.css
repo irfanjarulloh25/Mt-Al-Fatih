@@ -68,8 +68,6 @@ body {
 }
 
 .myNavbar .offcanvas {
-  /* height: 100vh;
-  width: 40vh; */
   height: 100vh;
   width: 40vw;
 }
@@ -368,12 +366,12 @@ footer .credit a {
     font-size: 2rem;
     text-align: center;
     align-items: center;
-    margin-right: 0;
   }
 
   .myNavbar .offcanvas {
-    width: 400px;
+    width: 300px;
     margin-right: 0;
+    margin-left: 0;
   }
 
   .sticky-top {

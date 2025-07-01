@@ -35,49 +35,46 @@ if (!localStorage.getItem("opened")) {
 
 // start vidio
 const videos = [
-      'vidio/vidio.mp4',
-      'vidio/vidio1.mp4',
-    ];
+    'vidio/vidio.mp4',
+    'vidio/vidio1.mp4',
+];
 
-    const player = document.getElementById('video-player');
-    let currentIndex = 0;
+const player = document.getElementById('video-player');
+let currentIndex = 0;
 
-    // Ganti video berdasarkan index
-    function loadVideo(index) {
-      player.src = videos[index];
-      player.load();
-    }
+// Ganti video berdasarkan index
+function loadVideo(index) {
+    player.src = videos[index];
+    player.load();
+}
 
-    // Tombol navigasi
-    function nextVideo() {
-      currentIndex = (currentIndex + 1) % videos.length;
-      loadVideo(currentIndex);
-    }
+// Tombol navigasi
+function nextVideo() {
+    currentIndex = (currentIndex + 1) % videos.length;
+    loadVideo(currentIndex);
+}
 
-    function prevVideo() {
-      currentIndex = (currentIndex - 1 + videos.length) % videos.length;
-      loadVideo(currentIndex);
-    }
+function prevVideo() {
+    currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+    loadVideo(currentIndex);
+}
 
-    // IntersectionObserver: putar video saat terlihat di layar
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+// IntersectionObserver: putar video saat terlihat di layar
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
         if (entry.isIntersecting) {
           player.play();
         } else {
           player.pause();
         }
-      });
-    }, {
-      threshold: 0.5 // 50% dari video harus terlihat dulu
     });
+}, {
+    threshold: 0.5 // 50% dari video harus terlihat dulu
+});
 
-    observer.observe(player);
+observer.observe(player);
 
-    // Jalankan video pertama langsung
-    window.addEventListener('load', () => {
+// Jalankan video pertama langsung
+window.addEventListener('load', () => {
       loadVideo(currentIndex);
-    });
-    
-
-    
+});
