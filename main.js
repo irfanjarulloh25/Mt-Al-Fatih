@@ -37,27 +37,27 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
   });
 
-const rootElement = document.querySelector(":root");
-function disableScroll() {
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-  window.onscroll = function () {
-    window.scrollTo(scrollTop, scrollLeft);
-  };
-  rootElement.style.scrollBehavior = "auto";
-}
+// const rootElement = document.querySelector(":root");
+// function disableScroll() {
+//   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+//   window.onscroll = function () {
+//     window.scrollTo(scrollTop, scrollLeft);
+//   };
+//   rootElement.style.scrollBehavior = "auto";
+// }
 
-function enableScroll() {
-  window.onscroll = function () {
-    window.scrollTo(scrollLeft);
-  };
-  rootElement.style.scrollBehavior = "smooth";
-  localStorage.setItem("opened", "true");
-}
+// function enableScroll() {
+//   window.onscroll = function () {
+//     window.scrollTo(scrollLeft);
+//   };
+//   rootElement.style.scrollBehavior = "smooth";
+//   localStorage.setItem("opened", "true");
+// }
 
-if (!localStorage.getItem("opened")) {
-  disableScroll();
-}
+// if (!localStorage.getItem("opened")) {
+//   disableScroll();
+// }
 
 
 // start vidio
