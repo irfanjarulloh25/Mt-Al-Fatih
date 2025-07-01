@@ -9,6 +9,33 @@ offCanvas.addEventListener("hidden.bs.offcanvas", function () {
   stickyTop.style.overflow = "hidden";
 });
 
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+
+      // Pastikan ini link internal dengan id target (misalnya #tujuan)
+      if (href.startsWith('#')) {
+        e.preventDefault(); // Jangan scroll langsung
+
+        const target = document.querySelector(href);
+        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset;
+        const navbarHeight = document.querySelector('.myNavbar').offsetHeight;
+
+        // Scroll manual dengan offset dikurangi tinggi navbar
+        window.scrollTo({
+          top: offsetTop - navbarHeight,
+          behavior: 'smooth'
+        });
+
+        // Setelah scroll selesai, baru tutup offcanvas (delay 500ms)
+        setTimeout(() => {
+          const offcanvas = document.getElementById('offcanvasNavbar');
+          const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+          bsOffcanvas.hide();
+        }, 500); // bisa sesuaikan waktu jika perlu
+      }
+    });
+  });
 
 const rootElement = document.querySelector(":root");
 function disableScroll() {

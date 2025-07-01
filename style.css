@@ -72,9 +72,9 @@ body {
   width: 100vw;
 }
 
-/* .myNavbar .nav-link {
+.myNavbar .nav-link {
   text-transform: uppercase;
-} */
+}
 
 /* start home */
 .home {
@@ -362,21 +362,20 @@ footer .credit a {
     }
   }
 
-  /* .myNavbar .nav-link {
+  .myNavbar .nav-link {
     font-size: 2rem;
     text-align: center;
     align-items: center;
-  }
-
+  } 
   .myNavbar .offcanvas {
-    width: 300px;
+    width: 100%;
     margin-right: 0;
     margin-left: auto;
   }
 
   .sticky-top {
     overflow: hidden;
-  } */
+  }
 
   .home .couple {
     margin-top: 30px;
