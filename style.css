@@ -71,8 +71,7 @@ body {
   /* height: 100vh;
   width: 40vh; */
   height: 100vh;
-  width: 80vw;
-  max-width: 300px;
+  width: 40vw;
 }
 
 .myNavbar .nav-link {
@@ -374,6 +373,7 @@ footer .credit a {
 
   .myNavbar .offcanvas {
     width: 400px;
+    margin-right: 0;
   }
 
   .sticky-top {
