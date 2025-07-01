@@ -30,50 +30,12 @@
       id="hero"
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
-      <!-- <main>
-        <a href="#undangan" class="btn btn-lg mt-4" onclick="enableScroll()"
-          >DETAIL</a
-        >
-      </main> -->
     </section>
 
     <!-- navabar start -->
     <nav class="navbar navbar-expand-md bg-body-transparant sticky-top myNavbar">
       <div class="container">
         <a class="navbar-brand" href="#">Mt Al Fatih</a>
-        <!-- <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mt Al Fatih</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="#tujuan">Tujuan</a>
-              <a class="nav-link" href="#anggaran">Anggaran</a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </nav>
 
@@ -268,8 +230,8 @@
                 Browser Anda tidak mendukung video.
             </video>
             <div class="controls">
-                <button onclick="prevVideo()">Sebelumnya</button>
-                <button onclick="nextVideo()">Berikutnya</button>
+                <button id="btn-prev">Sebelumnya</button>
+                <button id="btn-next">Berikutnya</button>
             </div>
         </main>
         <main class="container about-image">
