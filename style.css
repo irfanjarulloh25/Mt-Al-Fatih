@@ -371,7 +371,7 @@ footer .credit a {
   .myNavbar .offcanvas {
     width: 300px;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: auto;
   }
 
   .sticky-top {
@@ -390,5 +390,10 @@ footer .credit a {
     .grid {
         column-count: 2;
     }
+  }
+
+  .myNavbar .offcanvas {
+      width: 280px; 
+      margin-left: auto; 
   }
 }
