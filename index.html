@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mt Al Fatih</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <a href="#undangan" class="btn btn-lg mt-4" onclick="enableScroll()"
+          >DETAIL</a
+        >
+      </main>
+    </section>
+
+    <!-- navabar start -->
+    <nav
+      class="navbar navbar-expand-md bg-body-transparant sticky-top myNavbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Mt Al Fatih</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mt Al Fatih</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#tujuan">Tujuan</a>
+              <a class="nav-link" href="#anggaran">Anggaran</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- start home  -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Majelis Ta'lim Al Fatih</h2>
+            <h3>
+              Merupakan wadah pembinaan keagamaan masyarakat yang telah berperan aktif dalam menyelenggarakan kegiatan pengajian. Pendidikan Al Qur'an, pembinaan akhlak, serta kegiatan sosial keislaman lainnya. Dengan semakin meningkatnya partisipasi jamaah dan luasnya cakupan kegiatan, kebutuhan akan lahan permanen sebagai tempat kegiatan menjadi sangat mendesak saat ini, kegiatan Majelis Ta'lim masih dilakukan ditempat yang terbatas. Untuk itu, kami berinisiatif menggalang pastisipasi umat, <br><b>Melalui program wakaf tanah dan pengembangan Majelis Ta'lim Al Fatih</b>. <br>Yang diharapkan menjadi solusi jangka panjang dan landasan kokoh dalam pengembangan dakwah islam.
+            </h3>
+          </div>
+        </div>
+        <div class="row couple">
+          <div class="col-lg-6 mt-4">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Acara Kegiatan Rutin Mingguan</h3>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/IMG6.jpg"
+                  alt="Kegiatan"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/IMG6.jpg"
+                  alt="cowo"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Acara Hari Besar Islam</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Santri Taman Pendidikan brAl Qur'an (TPQ)</h3>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/IMG6.jpg"
+                  alt="Kegiatan"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end home -->
+
+    <!-- info start-->
+    <section id="tujuan" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>AMANAH AL FATIH</h2>
+            <p class="alamat">Andil Wakaf Pengembangan Majelis Ta'lim Al Fatih Niaga Amal Hasanah <br><br>Sebuah gerakan sosial yang mengajak Bapak/Ibu. Muslimin/Muslimat untuk ikut serta dalam perniagaan amal yang Hasanah baik berupa donasi wakaf ataupun pengembangan pembangunan Majelis Ta'lim Al Fatih dengan gerakan sosial ini tujuan untuuk tersedia nya lahan tetap Majelis Ta'lim Al Fatih berupa tanah Wakaf dapat terelisasi. <br> Yang peruntuknya :</p>
+            <a
+              href="https://maps.app.goo.gl/nveJgXhcE2ZkexXL9"
+              class="btn btn-light btn-sm"
+              >Google Maps</a
+            >
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header"><p>Keberlangsungan dakwah dan pendidikan islam dalam jangka panjang</p></div>
+              <div class="card-body">
+                <p>Dengan andil wakaf dan pengembangan Majelis Ta'lim Al Fatih ini menjadi ladang amal jariyah yang insya allah terus mengalir bagi para pewakaf maupun donatur</p>
+              </div>
+              <div class="card-footer">
+                <p>Pusat pembinaan generasi muda muslim yang produktif dan mandiri</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- info end -->
+
+    <!-- galery start -->
+    <section class="anggaran" id="anggaran">
+        <div class="container justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Dana Pemanfaatan Tanah Wakaf</span>
+                    <p>Tanah Wakaf seluas 50 M<sup>2</sup> ( 5m x 10m ) yang dibeli dengan sistem andil wakaf sesuai dengan kemampuan pewakaf / donatur insya allah akan dimanfaatkan menjadi perluasan Majelis Ta'lim Al Fatih berupa bangunan Majelis berikut dengan sarana pendukung ( Toilet dan Tempat Wudhu ), yang insya allah aula Majelis di gunakan untuk pendidikan, dakwah, serta kegiatan syiar islam dan juga kegiatan ibadah lainnya,</p>
+                    <h2>Rencana Anggaran</h2>
+                    <ol>
+                        <li>
+                            <strong>Pembebasan tanah wakaf seluas 50 M<sup>2</sup></strong><br>
+                            Dengan biaya per meter: <p>Rp. 3.000.000,00</p>
+                            Total: <p>Rp. 150.000.000,00</p> 
+                            (<em>Seratus lima puluh juta rupiah</em>)
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Pengembangan pembangunan majelis ta'lim Al Fatih</strong><br>
+                            Luas bangunan: 50 M<sup>2</sup><br>
+                            Biaya pembangunan per meter: <p>Rp. 2.500.000,00</p>
+                            Total: <p>Rp. 125.000.000,00</p> 
+                            (<em>Seratus dua puluh lima juta rupiah</em>)
+                        </li>
+                    </ol>
+                    <div>
+                        <p><strong>Secara keseluruhan gerakan AMANAH AL FATIH ini membutuhkan pendanaan sebesar:</strong></p>
+                        <p class="highlight">Rp. 275.000.000,00</p>
+                        <p>(<em>Dua ratus tujuh puluh lima juta rupiah</em>)</p>
+                    </div>
+                    <div>
+                        <p><strong>Lokasi:</strong> Tanah wakaf di samping kanan majelis ta'lim yang sudah ada, 
+                        berlokasi di:</p>
+                        <p>Jl. H Abdul Rojak Gg. Taman RT 01 RW 05, Kelurahan Jatiluhur, Kecamatan Jatiasih, Kota Bekasi - Jawa Barat</p>
+                    </div>
+                    <div >
+                        <p><strong>Sekretariat Majelis Ta'lim Al Fatih</strong></p>
+                        <p>Jl. H Abdul Rojak Gg. Taman RT 01 RW 05, Kp. Pedurenan, Kel. Jatiluhur, Kec. Jatiasih, Kota Bekasi</p>
+                    </div>
+                    <p class="mt-4">Teriring doa semoga Allah SWT meridhoi segala niat baik kita dan menjadikan gerakan AMANAH MAJELIS TA'LIM AL FATIH ini bernilai ibadah yang insya allah memperberat timbangan kebaikan kita di Yaumil Mizan nanti <br>Semoga kita mudah dan mampukan oleh Allah SWT <br>AamiinvYa Rabbal Alamin</p>
+
+                    <h2>Surat Ali 'Imran Ayat 92</h2>
+                    <div class="arabic mt-5">
+                        لَنْ تَنَالُوا الْبِرَّ حَتَّىٰ تُنْفِقُوا مِمَّا تُحِبُّونَ ۚ وَمَا تُنْفِقُوا مِنْ شَيْءٍ فَإِنَّ اللَّهَ بِهِ عَلِيمٌ
+                    </div>
+                    <div class="terjemahan mt-3">
+                        Kamu sekali-kali tidak akan memperoleh kebajikan (yang sempurna), sebelum kamu menafkahkan sebagian harta yang kamu cintai. 
+                        Dan apa saja yang kamu nafkahkan, maka sesungguhnya Allah mengetahuinya.
+                    </div>
+
+                    <h2>Contact Person</h2>
+                    <div class="contact-container">
+                        <div class="contact-card">
+                            <h3>Ust. Ahmad</h3>
+                            <p>📞 <a href="tel:081234567890">0812-3456-7890</a></p>
+                            <p>📱 <a href="https://wa.me/6281234567890">WhatsApp</a></p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>Ust. Budi</h3>
+                            <p>📞 <a href="tel:089876543210">0898-7654-3210</a></p>
+                            <p>📱 <a href="https://wa.me/6289876543210">WhatsApp</a></p>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>Rekening Donasi</h3>
+                            <h3>Bank Bca</h3>
+                            <h3>5680564746</h3>
+                            <h3>A/N Irfan Jarulloh</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </section>
+    <!-- galery end -->
+
+    <!-- galery start -->
+    <section class="about-container container">
+        <main class="container about-image">
+            <h2 class="text-center mb-4">Lahan Yang akan di Wakafkan</h2>
+            <div class="grid">
+                <div class="grid-item scroll-animation">
+                    <img src="img/lahan.jpg" alt="Gambar 1">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/lahan1.jpg" alt="Gambar 2">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/lahan3.jpg" alt="Gambar 3">
+                </div>
+        </main>
+        </main>
+        <main>
+            <h2 class="text-center mb-4">Galeri Video</h2>
+            <video id="video-player" autoplay muted controls loop controlsList="nodownload">
+                <source src="vidio/vidio.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+            </video>
+            <div class="controls">
+                <button onclick="prevVideo()">Sebelumnya</button>
+                <button onclick="nextVideo()">Berikutnya</button>
+            </div>
+        </main>
+        <main class="container about-image">
+            <h2 class="text-center mb-4">Galeri Foto</h2>
+            <div class="grid">
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG4.jpg" alt="Gambar 1">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG6.jpg" alt="Gambar 2">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG5.jpg" alt="Gambar 3">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG7.jpg" alt="Gambar 4">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG8.jpg" alt="Gambar 5">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG9.jpg" alt="Gambar 6">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG10.jpg" alt="Gambar 7">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG11.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG12.jpg" alt="Gambar 1">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG13.jpg" alt="Gambar 2">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG15.jpg" alt="Gambar 3">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG16.jpg" alt="Gambar 4">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG17.jpg" alt="Gambar 5">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG18.jpg" alt="Gambar 6">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG19.jpg" alt="Gambar 7">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG20.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG21.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG22.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG23.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG24.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG25.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG27.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG28.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG29.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/IMG31.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/parkiran.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/parkiran1.jpg" alt="Gambar 8">
+                </div>
+                <div class="grid-item scroll-animation">
+                    <img src="img/parkiran2.jpg" alt="Gambar 8">
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- galery end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com/mt.alfatih_official/?igsh=MXNlcWFpY2x4OXo2Nw%3D%3D#"><i class="fa-brands fa-instagram"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+        </div>
+        <div class="links">
+            <a class="nav-link nav-home" href="#home">HOME</a>
+            <a class="nav-link nav-store" href="#tujuan">TUJUAN</a>
+            <a class="nav-link nav-contact" href="#Anggaran">ANGGARAN</a>
+        </div>
+        <div class="credit">
+            <p>Created by <a href="">Irfan Jarulloh</a>. | &copy; 2025.</p>
+        </div>
+    </footer>
+     <!-- footer end -->
+
+
+    <script src="https://kit.fontawesome.com/76b33c1416.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- lighbox -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
