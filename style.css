@@ -67,14 +67,14 @@ body {
   font-weight: bold;
 }
 
-.myNavbar .offcanvas {
+/* .myNavbar .offcanvas {
   height: 100vh;
   width: 100vw;
 }
 
 .myNavbar .nav-link {
   text-transform: uppercase;
-}
+} */
 
 /* start home */
 .home {
@@ -362,7 +362,7 @@ footer .credit a {
     }
   }
 
-  .myNavbar .nav-link {
+  /* .myNavbar .nav-link {
     font-size: 2rem;
     text-align: center;
     align-items: center;
@@ -371,7 +371,7 @@ footer .credit a {
     width: 300px;
     margin-right: 0;
     margin-left: auto;
-  }
+  } */
 
   .sticky-top {
     overflow: hidden;
