@@ -56,21 +56,21 @@ body {
 
 
 /* start navbar */
-/* .myNavbar {
+.myNavbar {
   backdrop-filter: blur(6px);
-} */
+}
 
-/* .myNavbar .navbar-brand,
+.myNavbar .navbar-brand,
 .myNavbar .offcanvas-title {
   font-family: "Sacramento", cursive;
   font-size: 3.2rem;
   font-weight: bold;
-} */
+}
 
-/* .myNavbar .offcanvas {
+.myNavbar .offcanvas {
   height: 100vh;
-  width: 40vw;
-} */
+  width: 100vw;
+}
 
 /* .myNavbar .nav-link {
   text-transform: uppercase;
