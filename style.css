@@ -68,8 +68,11 @@ body {
 }
 
 .myNavbar .offcanvas {
+  /* height: 100vh;
+  width: 40vh; */
   height: 100vh;
-  width: 40vh;
+  width: 80vw;
+  max-width: 300px;
 }
 
 .myNavbar .nav-link {
@@ -365,6 +368,10 @@ footer .credit a {
   .myNavbar .nav-link {
     font-size: 2rem;
     text-align: center;
+  }
+
+  .myNavbar .offcanvas {
+    width: 400px;
   }
 
   .sticky-top {
